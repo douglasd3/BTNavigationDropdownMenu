@@ -29,7 +29,7 @@ import UIKit
 // MARK: BTNavigationDropdownMenu
 public class BTNavigationDropdownMenu: UIView {
     
-    // The color of menu title. Default is darkGrayColor()
+    // The text of menu title.
     public var menuText: String! {
         get {
             return self.menuTitle.text
@@ -659,7 +659,7 @@ class BTTableViewCell: UITableViewCell {
         }
         self.checkmarkIcon.hidden = true
         self.checkmarkIcon.image = self.configuration.checkMarkImage
-        self.checkmarkIcon.contentMode = UIViewContentMode.ScaleAspectFill
+        self.checkmarkIcon.contentMode = UIViewContentMode.center
         self.contentView.addSubview(self.checkmarkIcon)
         
         // Separator for cell
