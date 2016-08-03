@@ -30,6 +30,16 @@ import UIKit
 public class BTNavigationDropdownMenu: UIView {
     
     // The color of menu title. Default is darkGrayColor()
+    public var menuText: String! {
+        get {
+            return self.menuTitle.text
+        }
+        set(value) {
+            self.menuTitle.text = value
+        }
+    }
+    
+    // The color of menu title. Default is darkGrayColor()
     public var menuTitleColor: UIColor! {
         get {
             return self.configuration.menuTitleColor
